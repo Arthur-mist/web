@@ -1,12 +1,56 @@
-![SeAT](http://i.imgur.com/aPPOxSK.png)
-# web
+/**
+ * SeAT login page layout
+ */
+@media all {
+    html, body {
+        height: auto;
+    }
 
-[![Code Climate](https://codeclimate.com/github/eveseat/web/badges/gpa.svg)](https://codeclimate.com/github/eveseat/web)
-[![Latest Stable Version](https://poser.pugx.org/eveseat/web/v/stable)](https://packagist.org/packages/eveseat/web)
-[![Total Downloads](https://poser.pugx.org/eveseat/web/downloads)](https://packagist.org/packages/eveseat/web)
-[![Latest Unstable Version](https://poser.pugx.org/eveseat/web/v/unstable)](https://packagist.org/packages/eveseat/web)
-[![License](https://poser.pugx.org/eveseat/web/license)](https://packagist.org/packages/eveseat/web)
-[![StyleCI](https://styleci.io/repos/43090899/shield?branch=master)](https://styleci.io/repos/43090899)
+    .login-page, .register.body {
+        color: rgb(255,255,255);
+        background-image: url(https://web.ccpgamescdn.com/aws/eveonline/sso/background.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 
-## This repository contains the SeAT Web Interface
-Please use the main SeAT repository [here](https://github.com/eveseat/seat) for issues.
+    .login-box, .register-box {
+        width: 360px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: rgba(48,48,48,.8);
+        transform: translate(-50%, -50%);
+        border: 5px solid #ecf0f1;
+        border-radius: 40px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    }
+
+    .login-logo, .register-logo {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 25px;
+        font-weight: 300;
+        margin-top: 50px;
+    }
+
+    .login-logo::before, .register-logo::before {
+        content: " ";
+        display: block;
+        width: 128px;
+        height:128px;
+        margin: 0 auto;
+        background-image: url(https://images.evetech.net/corporations/98482334/logo?size=128);
+        border-radius: 50%;
+        margin-bottom: 50px;
+    }
+
+    .login-box-body, .register-box-body {
+        background: transparent;
+        padding: 20px;
+        border-top: 0;
+        color: inherit;
+    }
+}
